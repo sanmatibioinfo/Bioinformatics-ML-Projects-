@@ -98,9 +98,9 @@ python MedLit_AI.ipynb
 
 ## Author
 
-**Sanmti** · Bioinformatics & AI
-📧 sanmti.bioinfo@gmail.com · GitHub: [@your-username](https://github.com/your-username)
-
+**Sanmati** · Bioinformatics & AI
+📧 sanmati.bioinfo@gmail.com
+linkedin: https://www.linkedin.com/in/sanmati-ganesh-701008273 
 ---
 
 ## License
