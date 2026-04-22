@@ -97,12 +97,11 @@ python MedLit_AI.ipynb
 ---
 
 ## Author
----
-Sanmati · Bioinformatics & AI
-📧 sanmati.bioinfo@gmail.com
-linkedin: https://www.linkedin.com/in/sanmati-ganesh-701008273 
----
+**Sanmati Ganesh**
+sanmati.bioinfo@gmail.com
+linkedin: https://www.linkedin.com/in/sanmati-ganesh-701008273
 
+---
 ## License
 
 Released under the [MIT License](LICENSE) — free to use, modify, and distribute with attribution.
