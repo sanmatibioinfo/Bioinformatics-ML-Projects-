@@ -97,7 +97,7 @@ python MedLit_AI.ipynb
 ---
 
 ## Author
-
+---
 **Sanmati** · Bioinformatics & AI
 📧 sanmati.bioinfo@gmail.com
 linkedin: https://www.linkedin.com/in/sanmati-ganesh-701008273 
