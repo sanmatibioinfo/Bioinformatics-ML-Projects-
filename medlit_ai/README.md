@@ -97,8 +97,8 @@ python MedLit_AI.ipynb
 ---
 
 ## Author
-**Sanmati Ganesh**
-sanmati.bioinfo@gmail.com
+**Sanmati Ganesh** <br>
+sanmati.bioinfo@gmail.com <br>
 linkedin: https://www.linkedin.com/in/sanmati-ganesh-701008273
 
 ---
