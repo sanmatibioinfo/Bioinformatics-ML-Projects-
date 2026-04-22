@@ -19,8 +19,7 @@ measure accuracy, but to understand the *type* of errors LLMs make: do they hall
 confuse disease signatures, or return results that are technically correct but biologically
 uninformative?
 
-Two models are compared — **Claude** (general-purpose reasoning) and **BioGPT**
-(biomedical-specific) — to test whether domain-specific training actually helps.
+llm model was compared — **grok** (general-purpose reasoning) against **Fgsea** and **ORA**
 
 ---
 
@@ -76,7 +75,7 @@ The same gene list is analyzed by three methods in parallel:
   statistical ground truth throughout because it uses the full gene ranking, not just a cutoff.
 - **ORA** — overrepresentation analysis using `clusterProfiler` against GO Biological Process
   terms. A simpler, threshold-based approach included as a classical baseline.
-- **LLM** — top 100 gene symbols sent to Claude and BioGPT via API. Each model is asked to
+- **LLM** — top 100 gene symbols sent to grok via API. The model is asked to
   return the top 10 enriched pathways in structured JSON with confidence levels and supporting
   genes. Each call is repeated 3 times to measure output consistency.
 
@@ -138,43 +137,22 @@ install.packages(c("tidyverse", "ggplot2", "pheatmap", "jsonlite", "httr"))
 
 **API keys** (set before running `R/06_llm_calls.R`):
 ```r
-Sys.setenv(ANTHROPIC_API_KEY = "your-key-here")
-Sys.setenv(HF_API_KEY = "your-key-here")
-```
+Sys.setenv(GROQ_API_KEY = "your-key-here")
 
-> Never commit API keys to a public repository.
+```
 
 **Data:** Not included. Download GSE72326 and GSE41850 from
 [NCBI GEO](https://www.ncbi.nlm.nih.gov/geo/) or run `R/01_data_download.R`.
 
----
 
-## Project Structure
-
-```
-├── R/
-│   ├── 01_data_download.R
-│   ├── 02_deseq2_lupus.R
-│   ├── 03_deseq2_ms.R
-│   ├── 04_fgsea_analysis.R
-│   ├── 05_ora_analysis.R
-│   ├── 06_llm_calls.R
-│   ├── 07_benchmarking.R
-│   ├── 08_failure_modes.R
-│   ├── 09_biological_sanity.R
-│   └── 10_cross_disease.R
-├── results/
-├── figures/
-└── README.md
-```
 
 ---
 
 ## Author
+**Sanmati Ganesh** <br>
+sanmati.bioinfo@gmail.com <br>
+https://www.linkedin.com/in/sanmati-ganesh-701008273
 
-**Fathima Nishath**
-Master's student · Bioinformatics
-Internship project — Uppsala University, under Prof. Jan Komorowski
 
 ---
 
