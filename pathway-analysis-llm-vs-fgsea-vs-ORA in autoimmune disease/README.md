@@ -35,7 +35,8 @@ llm model was compared — **grok** (general-purpose reasoning) against **Fgsea*
      ┌─────┼─────┐
      ▼     ▼     ▼
    fgsea  ORA   LLM
-  (ranked) (ORA) (Claude + BioGPT)
+  (ranked) (ORA) (Grok<img width="960" height="768" alt="Sanity_Score" src="https://github.com/user-attachments/assets/6a8d914b-fb4b-44bf-8071-85ecd9ce55d0" />
+)
      └─────┼─────┘
            │
            ▼
@@ -99,6 +100,8 @@ Statistical benchmarking against fgsea only tells you consistency with one metho
 scores each method against a manually curated gold standard — pathways that are independently
 confirmed in the primary literature for each disease. A method can score poorly against fgsea
 but still recover the right biology, and vice versa. That gap is one of the key findings.
+
+<p align="center"><img width="398" height="312" alt="image" src="https://github.com/user-attachments/assets/9c4c7403-0a97-4a7d-b883-8ccfee639144" /></p>
 
 **Lupus gold standard:** Type I interferon signaling · Complement activation · NETosis · B cell dysregulation
 
